@@ -10,3 +10,5 @@ RUN mv Mars4_4.jar /etc/mars/Mars.jar
 RUN echo '#!/usr/bin/env bash\njava -jar /etc/mars/Mars.jar $@' > /usr/bin/Mars
 RUN chmod +x /usr/bin/Mars
 
+USER ubuntu
+
